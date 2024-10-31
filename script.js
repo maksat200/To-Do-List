@@ -2,21 +2,30 @@ const addInput = document.getElementById("INput");
 const addSubmit = document.getElementById("Submit");
 const clear_ = document.getElementById("Cleare");
 const taskContainer = document.getElementById("taskContainer");
-
+const maxLength = 40;
 let tasks = [];
+
 
 document.addEventListener("DOMContentLoaded", loadTasks);
 
 addSubmit.addEventListener("click", function() { 
     if (addInput.value) {
-        const newTask = {
-            text: addInput.value.trim(),
-            completed: false,
-        };
-        tasks.push(newTask);
-        addTaskElement(newTask);
-        saveTasksToLocalStorage();
-        addInput.value = '';
+        if (addInput.value.length > maxLength) {
+            alert(`Task cannot exceed ${maxLength} characters.`);
+        }
+
+        else { 
+            const newTask = {
+                text: addInput.value.trim(),
+                completed: false,
+            };
+            tasks.push(newTask);
+            addTaskElement(newTask);
+            saveTasksToLocalStorage();
+            addInput.value = '';
+
+        }
+        
     } else {
         alert('Please enter a task.');
     }
