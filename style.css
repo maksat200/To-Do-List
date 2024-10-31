@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body { 
+    width: 100vw;
+    height: 100vh;
+    display: flex ; 
+    justify-content:  center;
+    align-items: center;
+    background-color: royalblue;
+
+}
+.main_box {
+    border-radius: 4px;
+    height: auto;
+    width: 400px;
+    background-color: aliceblue;
+    gap: 10px;
+    padding: 10px;
+}
+input {
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    width: 310px ; 
+    height: 50px; 
+    font-size: 20px; 
+    color: #333; 
+    background-color: #f9f9f9;
+   
+}
+.Submit { 
+    
+    border: 0;
+    border-radius: 4px;
+    color: white ; 
+    background-color: rgb(90, 207, 90);
+    width:  70px;
+    height: 50px;
+    cursor: pointer;
+}   
+hr{
+    margin: 10px 0 ;
+
+}
+.task { 
+    padding : 10px
+}   
+.chek { 
+    display : none ;
+}
+.Cleare { 
+    border: 0;
+    border-radius: 4px;
+    border: solid red;
+    color: rgb(255, 0, 0) ; 
+    background-color: rgb(255, 255, 255);
+    width:  400px;
+    height: 50px;
+    cursor: pointer;
+}
+.Cleare:hover { 
+    color : white ; 
+    background-color: red;
+}
+.Submit:hover{ 
+    background-color: rgb(66, 151, 66);
+}
