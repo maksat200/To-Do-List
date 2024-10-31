@@ -21,7 +21,3 @@
 - HTML
 - CSS
 - JavaScript
-
-## Лицензия
-
-Этот проект лицензируется под MIT License - подробности см. в файле [LICENSE](LICENSE).
